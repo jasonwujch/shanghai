@@ -1,0 +1,909 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_b7e0739f623a347caabf264a993bc7ad {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_b7e0739f623a347caabf264a993bc7ad" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_b7e0739f623a347caabf264a993bc7ad = L.map(
+                "map_b7e0739f623a347caabf264a993bc7ad",
+                {
+                    center: [31.185874, 121.412591],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 16,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_e6e3c2d760292ac5eb2f5216ffa91464 = L.tileLayer(
+                "https://stamen-tiles-{s}.a.ssl.fastly.net/toner/{z}/{x}/{y}.png",
+                {"attribution": "Map tiles by \u003ca target=\"_blank\" href=\"http://stamen.com\"\u003eStamen Design\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://creativecommons.org/licenses/by/3.0\"\u003eCC BY 3.0\u003c/a\u003e. Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_b7e0739f623a347caabf264a993bc7ad);
+        
+    
+            var marker_14484d74631bbf153b5d63950917675c = L.marker(
+                [31.18773291666936, 121.40794636288098],
+                {}
+            ).addTo(map_b7e0739f623a347caabf264a993bc7ad);
+        
+    
+            var icon_49796c8139fa4b4c1a351ee90723938e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_14484d74631bbf153b5d63950917675c.setIcon(icon_49796c8139fa4b4c1a351ee90723938e);
+        
+    
+        var popup_6560060167d04d6ae541452a87959f70 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2b52dcb7b3ab69580f6fdd3e8d3f4323 = $(`<div id="html_2b52dcb7b3ab69580f6fdd3e8d3f4323" style="width: 100.0%; height: 100.0%;">上海市吴中路369号美恒大厦2层</div>`)[0];
+                popup_6560060167d04d6ae541452a87959f70.setContent(html_2b52dcb7b3ab69580f6fdd3e8d3f4323);
+            
+        
+
+        marker_14484d74631bbf153b5d63950917675c.bindPopup(popup_6560060167d04d6ae541452a87959f70)
+        ;
+
+        
+    
+    
+            marker_14484d74631bbf153b5d63950917675c.bindTooltip(
+                `<div>
+                     万岛日本料理铁板烧
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3ea970d5f2f5c7b64d07bf512affb51c = L.marker(
+                [31.23990313000809, 121.47960839692333],
+                {}
+            ).addTo(map_b7e0739f623a347caabf264a993bc7ad);
+        
+    
+            var icon_dace44560c2afa924ef380e0dd4c822b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_3ea970d5f2f5c7b64d07bf512affb51c.setIcon(icon_dace44560c2afa924ef380e0dd4c822b);
+        
+    
+        var popup_5022510664b68a0351f4b38c1d6765f6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_740e61b955308346c87e0de8659aee06 = $(`<div id="html_740e61b955308346c87e0de8659aee06" style="width: 100.0%; height: 100.0%;">恒基名人购物中心</div>`)[0];
+                popup_5022510664b68a0351f4b38c1d6765f6.setContent(html_740e61b955308346c87e0de8659aee06);
+            
+        
+
+        marker_3ea970d5f2f5c7b64d07bf512affb51c.bindPopup(popup_5022510664b68a0351f4b38c1d6765f6)
+        ;
+
+        
+    
+    
+            marker_3ea970d5f2f5c7b64d07bf512affb51c.bindTooltip(
+                `<div>
+                     寿司青
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_da46350468578df6dc8f79bd6a6eb1de = L.marker(
+                [31.190331307959365, 121.42913982237636],
+                {}
+            ).addTo(map_b7e0739f623a347caabf264a993bc7ad);
+        
+    
+            var icon_956d09fc5aa221e6a07714fc23351f2a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_da46350468578df6dc8f79bd6a6eb1de.setIcon(icon_956d09fc5aa221e6a07714fc23351f2a);
+        
+    
+        var popup_420ec03387728a32e1889aa64a53f600 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_995e39aadbf36e20d7632780174344ce = $(`<div id="html_995e39aadbf36e20d7632780174344ce" style="width: 100.0%; height: 100.0%;">上海市文定路79号</div>`)[0];
+                popup_420ec03387728a32e1889aa64a53f600.setContent(html_995e39aadbf36e20d7632780174344ce);
+            
+        
+
+        marker_da46350468578df6dc8f79bd6a6eb1de.bindPopup(popup_420ec03387728a32e1889aa64a53f600)
+        ;
+
+        
+    
+    
+            marker_da46350468578df6dc8f79bd6a6eb1de.bindTooltip(
+                `<div>
+                     忆家一宴
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c83738f8ff47b26ab907de0d8e8d2484 = L.marker(
+                [31.208796414294497, 121.4190700222334],
+                {}
+            ).addTo(map_b7e0739f623a347caabf264a993bc7ad);
+        
+    
+            var icon_14112899d66a2958ca9b17d54edddf0e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_c83738f8ff47b26ab907de0d8e8d2484.setIcon(icon_14112899d66a2958ca9b17d54edddf0e);
+        
+    
+        var popup_5135bc2b037bb9cdc37a24d677fec473 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2c7e6a6b573ddbc883bc2d3031b32ccb = $(`<div id="html_2c7e6a6b573ddbc883bc2d3031b32ccb" style="width: 100.0%; height: 100.0%;">上海市定西路685号101</div>`)[0];
+                popup_5135bc2b037bb9cdc37a24d677fec473.setContent(html_2c7e6a6b573ddbc883bc2d3031b32ccb);
+            
+        
+
+        marker_c83738f8ff47b26ab907de0d8e8d2484.bindPopup(popup_5135bc2b037bb9cdc37a24d677fec473)
+        ;
+
+        
+    
+    
+            marker_c83738f8ff47b26ab907de0d8e8d2484.bindTooltip(
+                `<div>
+                     沪西老弄堂面馆
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4d26f0898bcea97ebbc1e76347ffd58e = L.marker(
+                [31.231179960095137, 121.42390724480711],
+                {}
+            ).addTo(map_b7e0739f623a347caabf264a993bc7ad);
+        
+    
+            var icon_ea21d3fa8c864f7b729543cb4e7f0c47 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_4d26f0898bcea97ebbc1e76347ffd58e.setIcon(icon_ea21d3fa8c864f7b729543cb4e7f0c47);
+        
+    
+        var popup_469e4121c187bc32fddbd9597ff38ff0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_07a45cc260f5eb933666dc62381f5890 = $(`<div id="html_07a45cc260f5eb933666dc62381f5890" style="width: 100.0%; height: 100.0%;">万航渡路889号广场地下1层B1</div>`)[0];
+                popup_469e4121c187bc32fddbd9597ff38ff0.setContent(html_07a45cc260f5eb933666dc62381f5890);
+            
+        
+
+        marker_4d26f0898bcea97ebbc1e76347ffd58e.bindPopup(popup_469e4121c187bc32fddbd9597ff38ff0)
+        ;
+
+        
+    
+    
+            marker_4d26f0898bcea97ebbc1e76347ffd58e.bindTooltip(
+                `<div>
+                     馋三尺蟹粉小笼
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a1a04e921577753c2a81454bf6c1f18d = L.marker(
+                [31.208844465182608, 121.41574849461084],
+                {}
+            ).addTo(map_b7e0739f623a347caabf264a993bc7ad);
+        
+    
+            var icon_76c71c5b0edf3a0326b9444ca162b846 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "coffee", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_a1a04e921577753c2a81454bf6c1f18d.setIcon(icon_76c71c5b0edf3a0326b9444ca162b846);
+        
+    
+        var popup_27912dc1489a6fa80c774b1c91ecae95 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_05122836ba5ac02d16d5ec667a275788 = $(`<div id="html_05122836ba5ac02d16d5ec667a275788" style="width: 100.0%; height: 100.0%;">上海市法华镇路820号</div>`)[0];
+                popup_27912dc1489a6fa80c774b1c91ecae95.setContent(html_05122836ba5ac02d16d5ec667a275788);
+            
+        
+
+        marker_a1a04e921577753c2a81454bf6c1f18d.bindPopup(popup_27912dc1489a6fa80c774b1c91ecae95)
+        ;
+
+        
+    
+    
+            marker_a1a04e921577753c2a81454bf6c1f18d.bindTooltip(
+                `<div>
+                     一壶春生煎
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b8e1ec0e541925e8ab63d290ae1fc62f = L.marker(
+                [31.206244259005892, 121.43369254707682],
+                {}
+            ).addTo(map_b7e0739f623a347caabf264a993bc7ad);
+        
+    
+            var icon_27b6a49449323b1982b68b110459ea7d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "coffee", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_b8e1ec0e541925e8ab63d290ae1fc62f.setIcon(icon_27b6a49449323b1982b68b110459ea7d);
+        
+    
+        var popup_245653a365e170c193b8aba367c7f3df = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_dcb7b8d628a2933556758f8ec1de9752 = $(`<div id="html_dcb7b8d628a2933556758f8ec1de9752" style="width: 100.0%; height: 100.0%;">上海市武康路439号武康大楼底楼-1</div>`)[0];
+                popup_245653a365e170c193b8aba367c7f3df.setContent(html_dcb7b8d628a2933556758f8ec1de9752);
+            
+        
+
+        marker_b8e1ec0e541925e8ab63d290ae1fc62f.bindPopup(popup_245653a365e170c193b8aba367c7f3df)
+        ;
+
+        
+    
+    
+            marker_b8e1ec0e541925e8ab63d290ae1fc62f.bindTooltip(
+                `<div>
+                     老麦咖啡
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_35ec8f644cad7764e650cdcf8fb9329e = L.marker(
+                [31.226734216354327, 121.44851689577669],
+                {}
+            ).addTo(map_b7e0739f623a347caabf264a993bc7ad);
+        
+    
+            var icon_98b7b24845172895eae3ad8504b84cb8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_35ec8f644cad7764e650cdcf8fb9329e.setIcon(icon_98b7b24845172895eae3ad8504b84cb8);
+        
+    
+        var popup_52abe6c7546f4054702a77578b524241 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e8de67adf0af22b707c560d875b1fa1e = $(`<div id="html_e8de67adf0af22b707c560d875b1fa1e" style="width: 100.0%; height: 100.0%;">上海市南京西路1333号上海展览中心西2馆2楼</div>`)[0];
+                popup_52abe6c7546f4054702a77578b524241.setContent(html_e8de67adf0af22b707c560d875b1fa1e);
+            
+        
+
+        marker_35ec8f644cad7764e650cdcf8fb9329e.bindPopup(popup_52abe6c7546f4054702a77578b524241)
+        ;
+
+        
+    
+    
+            marker_35ec8f644cad7764e650cdcf8fb9329e.bindTooltip(
+                `<div>
+                     恒悦尚品
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4bdb894365894739cd7fa55c268d2981 = L.marker(
+                [31.226920272982213, 121.43665156446356],
+                {}
+            ).addTo(map_b7e0739f623a347caabf264a993bc7ad);
+        
+    
+            var icon_54c9c3443d873dea5153db721d700329 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_4bdb894365894739cd7fa55c268d2981.setIcon(icon_54c9c3443d873dea5153db721d700329);
+        
+    
+        var popup_312557c8eb3726bf5a56204614822a36 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c252fec31eff51f1e3e34b40126ae66c = $(`<div id="html_c252fec31eff51f1e3e34b40126ae66c" style="width: 100.0%; height: 100.0%;">上海市万航渡路172号</div>`)[0];
+                popup_312557c8eb3726bf5a56204614822a36.setContent(html_c252fec31eff51f1e3e34b40126ae66c);
+            
+        
+
+        marker_4bdb894365894739cd7fa55c268d2981.bindPopup(popup_312557c8eb3726bf5a56204614822a36)
+        ;
+
+        
+    
+    
+            marker_4bdb894365894739cd7fa55c268d2981.bindTooltip(
+                `<div>
+                     敬食
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_284c5b4c4b4c78a85e7b183e9c5f61b7 = L.marker(
+                [31.236381312535016, 121.50335543309245],
+                {}
+            ).addTo(map_b7e0739f623a347caabf264a993bc7ad);
+        
+    
+            var icon_e2b60ca355c93fccfd405b71e8349172 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_284c5b4c4b4c78a85e7b183e9c5f61b7.setIcon(icon_e2b60ca355c93fccfd405b71e8349172);
+        
+    
+        var popup_a564c4ecca661a6b4c21e8ddd73c30b5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_455a62a8593972e013aaa32aa9b0a52e = $(`<div id="html_455a62a8593972e013aaa32aa9b0a52e" style="width: 100.0%; height: 100.0%;">上海市世纪大道100号上海柏悦酒店91楼</div>`)[0];
+                popup_a564c4ecca661a6b4c21e8ddd73c30b5.setContent(html_455a62a8593972e013aaa32aa9b0a52e);
+            
+        
+
+        marker_284c5b4c4b4c78a85e7b183e9c5f61b7.bindPopup(popup_a564c4ecca661a6b4c21e8ddd73c30b5)
+        ;
+
+        
+    
+    
+            marker_284c5b4c4b4c78a85e7b183e9c5f61b7.bindTooltip(
+                `<div>
+                     环球世纪100
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5a827080bed07cf882f5f1493a60261a = L.marker(
+                [31.20772677340725, 121.44391521073459],
+                {}
+            ).addTo(map_b7e0739f623a347caabf264a993bc7ad);
+        
+    
+            var icon_b897cd3f3218b720c41fb4e58b33dcf7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_5a827080bed07cf882f5f1493a60261a.setIcon(icon_b897cd3f3218b720c41fb4e58b33dcf7);
+        
+    
+        var popup_f416df0992f3b86e59454a18e390fa54 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a2aef79c3fbf000202dbe0f09138711c = $(`<div id="html_a2aef79c3fbf000202dbe0f09138711c" style="width: 100.0%; height: 100.0%;">上海市乌鲁木齐南路64号</div>`)[0];
+                popup_f416df0992f3b86e59454a18e390fa54.setContent(html_a2aef79c3fbf000202dbe0f09138711c);
+            
+        
+
+        marker_5a827080bed07cf882f5f1493a60261a.bindPopup(popup_f416df0992f3b86e59454a18e390fa54)
+        ;
+
+        
+    
+    
+            marker_5a827080bed07cf882f5f1493a60261a.bindTooltip(
+                `<div>
+                     66梧桐院•邻里汇
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8731a1ae686058387a3662f1bf98e6a7 = L.marker(
+                [31.19075480435102, 121.42508744549582],
+                {}
+            ).addTo(map_b7e0739f623a347caabf264a993bc7ad);
+        
+    
+            var icon_6a54689afe456d06aef3b00701c0cab9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "coffee", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_8731a1ae686058387a3662f1bf98e6a7.setIcon(icon_6a54689afe456d06aef3b00701c0cab9);
+        
+    
+        var popup_9700defc93fd715676ca65030f4a708a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f9647bad2f33822b83e288dd7accc505 = $(`<div id="html_f9647bad2f33822b83e288dd7accc505" style="width: 100.0%; height: 100.0%;">上海市宜山路280号</div>`)[0];
+                popup_9700defc93fd715676ca65030f4a708a.setContent(html_f9647bad2f33822b83e288dd7accc505);
+            
+        
+
+        marker_8731a1ae686058387a3662f1bf98e6a7.bindPopup(popup_9700defc93fd715676ca65030f4a708a)
+        ;
+
+        
+    
+    
+            marker_8731a1ae686058387a3662f1bf98e6a7.bindTooltip(
+                `<div>
+                     维吾尔餐厅
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7b7583b27326941a0fde4eb742f647d6 = L.marker(
+                [31.2447875621487, 121.47599858156518],
+                {}
+            ).addTo(map_b7e0739f623a347caabf264a993bc7ad);
+        
+    
+            var icon_ea3202f1cc452c8035ff08558a416ba4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_7b7583b27326941a0fde4eb742f647d6.setIcon(icon_ea3202f1cc452c8035ff08558a416ba4);
+        
+    
+        var popup_d63eb46c389eab860e268807f4cd324b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_87bcee7d1a1973bdc1932db775027770 = $(`<div id="html_87bcee7d1a1973bdc1932db775027770" style="width: 100.0%; height: 100.0%;">上海市山西北路108弄</div>`)[0];
+                popup_d63eb46c389eab860e268807f4cd324b.setContent(html_87bcee7d1a1973bdc1932db775027770);
+            
+        
+
+        marker_7b7583b27326941a0fde4eb742f647d6.bindPopup(popup_d63eb46c389eab860e268807f4cd324b)
+        ;
+
+        
+    
+    
+            marker_7b7583b27326941a0fde4eb742f647d6.bindTooltip(
+                `<div>
+                     宝格丽酒店
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_69287716c8f34e34e43b4ba27dac9b45 = L.marker(
+                [31.227532757765363, 121.42644428231797],
+                {}
+            ).addTo(map_b7e0739f623a347caabf264a993bc7ad);
+        
+    
+            var icon_836278a86fb63f057b6c5e0e8ec50b17 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "pink", "prefix": "fa"}
+            );
+            marker_69287716c8f34e34e43b4ba27dac9b45.setIcon(icon_836278a86fb63f057b6c5e0e8ec50b17);
+        
+    
+        var popup_8647687dc766ece213a7e00b28ef59e6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1c543d1418a872d7c0dcf22e3ceed2f3 = $(`<div id="html_1c543d1418a872d7c0dcf22e3ceed2f3" style="width: 100.0%; height: 100.0%;">上海市万航渡路858弄36号</div>`)[0];
+                popup_8647687dc766ece213a7e00b28ef59e6.setContent(html_1c543d1418a872d7c0dcf22e3ceed2f3);
+            
+        
+
+        marker_69287716c8f34e34e43b4ba27dac9b45.bindPopup(popup_8647687dc766ece213a7e00b28ef59e6)
+        ;
+
+        
+    
+    
+            marker_69287716c8f34e34e43b4ba27dac9b45.bindTooltip(
+                `<div>
+                     静安丽舍
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_92aec23e2b2145bd68bc9a0b18fa8815 = L.marker(
+                [31.189957135696336, 121.42663183257356],
+                {}
+            ).addTo(map_b7e0739f623a347caabf264a993bc7ad);
+        
+    
+            var icon_fbe1bf387476894c86e5d6bdadf8dbd3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "pink", "prefix": "fa"}
+            );
+            marker_92aec23e2b2145bd68bc9a0b18fa8815.setIcon(icon_fbe1bf387476894c86e5d6bdadf8dbd3);
+        
+    
+        var popup_8a4db04a61bd30be2ebab5b7dbca31bd = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f8e0e10c99269e1396961c69a3a671f8 = $(`<div id="html_f8e0e10c99269e1396961c69a3a671f8" style="width: 100.0%; height: 100.0%;">上海市蒲汇塘路163号</div>`)[0];
+                popup_8a4db04a61bd30be2ebab5b7dbca31bd.setContent(html_f8e0e10c99269e1396961c69a3a671f8);
+            
+        
+
+        marker_92aec23e2b2145bd68bc9a0b18fa8815.bindPopup(popup_8a4db04a61bd30be2ebab5b7dbca31bd)
+        ;
+
+        
+    
+    
+            marker_92aec23e2b2145bd68bc9a0b18fa8815.bindTooltip(
+                `<div>
+                     泰德苑茶话会
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e6188c82fdb1013ca835c5cae57e0f53 = L.marker(
+                [31.1552079734037, 121.47795390634221],
+                {}
+            ).addTo(map_b7e0739f623a347caabf264a993bc7ad);
+        
+    
+            var icon_0b1e81287fe51458407eb9e9a5a461f4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "book", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_e6188c82fdb1013ca835c5cae57e0f53.setIcon(icon_0b1e81287fe51458407eb9e9a5a461f4);
+        
+    
+        var popup_4cf380932d81ee9e059e1f6fef9a4f8e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_83555b7cbbf58e21febed6b23e956eaf = $(`<div id="html_83555b7cbbf58e21febed6b23e956eaf" style="width: 100.0%; height: 100.0%;">上海市浦东新区东育路500弄1-9号前滩太古里S-L4-9～15</div>`)[0];
+                popup_4cf380932d81ee9e059e1f6fef9a4f8e.setContent(html_83555b7cbbf58e21febed6b23e956eaf);
+            
+        
+
+        marker_e6188c82fdb1013ca835c5cae57e0f53.bindPopup(popup_4cf380932d81ee9e059e1f6fef9a4f8e)
+        ;
+
+        
+    
+    
+            marker_e6188c82fdb1013ca835c5cae57e0f53.bindTooltip(
+                `<div>
+                     上海前滩太古里 茑屋书店
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b246e3af826118bc8c6d4ba7bdb74248 = L.marker(
+                [31.23975862609276, 121.44436751519267],
+                {}
+            ).addTo(map_b7e0739f623a347caabf264a993bc7ad);
+        
+    
+            var icon_fdc925a2167291bc8bf8420ea8f297c2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "book", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_b246e3af826118bc8c6d4ba7bdb74248.setIcon(icon_fdc925a2167291bc8bf8420ea8f297c2);
+        
+    
+        var popup_86dd8eba97358576540907f5b61c40a7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ff56f11bce4a503e85e316a971b45d70 = $(`<div id="html_ff56f11bce4a503e85e316a971b45d70" style="width: 100.0%; height: 100.0%;">上海市静安区江宁路699号3F</div>`)[0];
+                popup_86dd8eba97358576540907f5b61c40a7.setContent(html_ff56f11bce4a503e85e316a971b45d70);
+            
+        
+
+        marker_b246e3af826118bc8c6d4ba7bdb74248.bindPopup(popup_86dd8eba97358576540907f5b61c40a7)
+        ;
+
+        
+    
+    
+            marker_b246e3af826118bc8c6d4ba7bdb74248.bindTooltip(
+                `<div>
+                     TSUTAYA BOOKSTORE 上海MOHO店
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_76f46ad8a7b6d16a0796870a51ca69f9 = L.marker(
+                [31.24011922787017, 121.49186477673568],
+                {}
+            ).addTo(map_b7e0739f623a347caabf264a993bc7ad);
+        
+    
+            var icon_da8af794c64f17ae6cbf59533c9bfe2d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "university", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_76f46ad8a7b6d16a0796870a51ca69f9.setIcon(icon_da8af794c64f17ae6cbf59533c9bfe2d);
+        
+    
+        var popup_52d76f9ecccdaadb6e3f35d5b7aef092 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f25e385b7a71dcca97779a7af87525f3 = $(`<div id="html_f25e385b7a71dcca97779a7af87525f3" style="width: 100.0%; height: 100.0%;">上海市浦东新区滨江大道2777号</div>`)[0];
+                popup_52d76f9ecccdaadb6e3f35d5b7aef092.setContent(html_f25e385b7a71dcca97779a7af87525f3);
+            
+        
+
+        marker_76f46ad8a7b6d16a0796870a51ca69f9.bindPopup(popup_52d76f9ecccdaadb6e3f35d5b7aef092)
+        ;
+
+        
+    
+    
+            marker_76f46ad8a7b6d16a0796870a51ca69f9.bindTooltip(
+                `<div>
+                     浦东美术馆
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e6203ec5b7962c3756ae3375689c321a = L.marker(
+                [31.192376336094927, 121.43192748567805],
+                {}
+            ).addTo(map_b7e0739f623a347caabf264a993bc7ad);
+        
+    
+            var icon_ce73923fdde0f10bb1026cd60f0c1af3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "university", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_e6203ec5b7962c3756ae3375689c321a.setIcon(icon_ce73923fdde0f10bb1026cd60f0c1af3);
+        
+    
+        var popup_137f54c8b44ac5b80ebedf5275c3b5ce = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5fb5b97c6619c1e72b775ffcf557269d = $(`<div id="html_5fb5b97c6619c1e72b775ffcf557269d" style="width: 100.0%; height: 100.0%;">徐汇区蒲西路166号</div>`)[0];
+                popup_137f54c8b44ac5b80ebedf5275c3b5ce.setContent(html_5fb5b97c6619c1e72b775ffcf557269d);
+            
+        
+
+        marker_e6203ec5b7962c3756ae3375689c321a.bindPopup(popup_137f54c8b44ac5b80ebedf5275c3b5ce)
+        ;
+
+        
+    
+    
+            marker_e6203ec5b7962c3756ae3375689c321a.bindTooltip(
+                `<div>
+                     气象博物馆
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f15242c316725b10963da1f4dbf4ffbf = L.marker(
+                [31.192935272304933, 121.43206869267193],
+                {}
+            ).addTo(map_b7e0739f623a347caabf264a993bc7ad);
+        
+    
+            var icon_3cf4b55febef1ba8bab0050e817c4fec = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "church", "iconColor": "white", "markerColor": "purple", "prefix": "fa"}
+            );
+            marker_f15242c316725b10963da1f4dbf4ffbf.setIcon(icon_3cf4b55febef1ba8bab0050e817c4fec);
+        
+    
+        var popup_a5530d624545c56cb065cc9e97415655 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_16a20b85a008032c22649f4e91fdec0f = $(`<div id="html_16a20b85a008032c22649f4e91fdec0f" style="width: 100.0%; height: 100.0%;">徐汇区蒲西路158号</div>`)[0];
+                popup_a5530d624545c56cb065cc9e97415655.setContent(html_16a20b85a008032c22649f4e91fdec0f);
+            
+        
+
+        marker_f15242c316725b10963da1f4dbf4ffbf.bindPopup(popup_a5530d624545c56cb065cc9e97415655)
+        ;
+
+        
+    
+    
+            marker_f15242c316725b10963da1f4dbf4ffbf.bindTooltip(
+                `<div>
+                     徐家汇圣依纳爵主教座堂
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_66c36aaa16d05e79f231be0715b5edcd = L.marker(
+                [31.193204066665153, 121.43518956256618],
+                {}
+            ).addTo(map_b7e0739f623a347caabf264a993bc7ad);
+        
+    
+            var icon_a11665d698b57faae272ef5c14ff92c6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "book", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_66c36aaa16d05e79f231be0715b5edcd.setIcon(icon_a11665d698b57faae272ef5c14ff92c6);
+        
+    
+        var popup_75df4664fdc285a9b788017213f2e7f5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f1863c50842d6b7f32f820f594bb959c = $(`<div id="html_f1863c50842d6b7f32f820f594bb959c" style="width: 100.0%; height: 100.0%;">上海市漕溪北路158号</div>`)[0];
+                popup_75df4664fdc285a9b788017213f2e7f5.setContent(html_f1863c50842d6b7f32f820f594bb959c);
+            
+        
+
+        marker_66c36aaa16d05e79f231be0715b5edcd.bindPopup(popup_75df4664fdc285a9b788017213f2e7f5)
+        ;
+
+        
+    
+    
+            marker_66c36aaa16d05e79f231be0715b5edcd.bindTooltip(
+                `<div>
+                     徐家汇书院
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f28d19e94adb5b372ebc1fa952e56fcf = L.marker(
+                [31.235549591656337, 121.50097195029568],
+                {}
+            ).addTo(map_b7e0739f623a347caabf264a993bc7ad);
+        
+    
+            var icon_ba2b60dfece9aa409721b9eb21f6a5ff = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "book", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_f28d19e94adb5b372ebc1fa952e56fcf.setIcon(icon_ba2b60dfece9aa409721b9eb21f6a5ff);
+        
+    
+        var popup_7cb25f3362cdc00fc56e6d3056241e4a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c2012a7e57514970a4237d15a8b17790 = $(`<div id="html_c2012a7e57514970a4237d15a8b17790" style="width: 100.0%; height: 100.0%;">上海市浦东新区银城中路501号(上海中心大厦52层)</div>`)[0];
+                popup_7cb25f3362cdc00fc56e6d3056241e4a.setContent(html_c2012a7e57514970a4237d15a8b17790);
+            
+        
+
+        marker_f28d19e94adb5b372ebc1fa952e56fcf.bindPopup(popup_7cb25f3362cdc00fc56e6d3056241e4a)
+        ;
+
+        
+    
+    
+            marker_f28d19e94adb5b372ebc1fa952e56fcf.bindTooltip(
+                `<div>
+                     朵云书院
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d1896fd218eb478296385b4d8d4713b4 = L.marker(
+                [31.230183180207067, 121.47097500677364],
+                {}
+            ).addTo(map_b7e0739f623a347caabf264a993bc7ad);
+        
+    
+            var icon_154a2bf7f8475417c28302b9df2b08cb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "university", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_d1896fd218eb478296385b4d8d4713b4.setIcon(icon_154a2bf7f8475417c28302b9df2b08cb);
+        
+    
+        var popup_e81e8f558de52408238a4dbbe61c9a44 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2ba9e0726844028fff9565b57e5539bb = $(`<div id="html_2ba9e0726844028fff9565b57e5539bb" style="width: 100.0%; height: 100.0%;">上海市黄浦区人民大道201号</div>`)[0];
+                popup_e81e8f558de52408238a4dbbe61c9a44.setContent(html_2ba9e0726844028fff9565b57e5539bb);
+            
+        
+
+        marker_d1896fd218eb478296385b4d8d4713b4.bindPopup(popup_e81e8f558de52408238a4dbbe61c9a44)
+        ;
+
+        
+    
+    
+            marker_d1896fd218eb478296385b4d8d4713b4.bindTooltip(
+                `<div>
+                     上海博物馆
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7fc6d1f215311439402911071ec3f745 = L.marker(
+                [31.21040276077009, 121.42302383306921],
+                {}
+            ).addTo(map_b7e0739f623a347caabf264a993bc7ad);
+        
+    
+            var icon_2af62168223aff5a726664c01b60f117 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "book", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_7fc6d1f215311439402911071ec3f745.setIcon(icon_2af62168223aff5a726664c01b60f117);
+        
+    
+        var popup_0a2981a8108cd8d904c9ae145b4e149b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8fef29c84846d0324dd6507cf3b74992 = $(`<div id="html_8fef29c84846d0324dd6507cf3b74992" style="width: 100.0%; height: 100.0%;">上海市延安西路1262号上生新所7栋</div>`)[0];
+                popup_0a2981a8108cd8d904c9ae145b4e149b.setContent(html_8fef29c84846d0324dd6507cf3b74992);
+            
+        
+
+        marker_7fc6d1f215311439402911071ec3f745.bindPopup(popup_0a2981a8108cd8d904c9ae145b4e149b)
+        ;
+
+        
+    
+    
+            marker_7fc6d1f215311439402911071ec3f745.bindTooltip(
+                `<div>
+                     茑屋书店 上生新所店
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
+</html>
